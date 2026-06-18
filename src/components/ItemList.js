@@ -35,7 +35,7 @@ const ItemList = ({ items, dummy }) => {
             />
             {/* Add Button */}
             <button
-              className="absolute bottom-[-15px] p-2.5 px-4 rounded-xl bg-emerald-500 text-black font-black hover:bg-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.4)] active:scale-95 transition-all duration-300"
+              className="absolute bottom-[-15px] p-2.5 px-4 rounded-xl bg-emerald-500 cursor-pointer text-black font-black hover:bg-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.4)] active:scale-95 transition-all duration-300"
               onClick={() => handleAddItem(item)}
             >
               ADD +
