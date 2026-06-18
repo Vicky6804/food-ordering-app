@@ -1,8 +1,8 @@
-import { CDN_URL } from '../utils/constants';
-import { FiClock } from 'react-icons/fi';
-import { AiOutlineStar } from 'react-icons/ai';
-import { useContext } from 'react';
-import UserContext from '../utils/UserContext';
+import { CDN_URL } from "../utils/constants";
+import { FiClock } from "react-icons/fi";
+import { AiOutlineStar } from "react-icons/ai";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
@@ -14,11 +14,11 @@ const RestaurantCard = (props) => {
   return (
     <div
       data-testid="resCard"
-      className="m-4 p-4 w-[250px] bg-[#0f172a] border border-white/10 rounded-2xl hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:border-emerald-500/50 transition-all duration-300 group shadow-2xl"
+      className="m-4 p-4 w-full sm:w-[250px] max-w-[250px] bg-[#0f172a] border border-white/10 rounded-2xl hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:border-emerald-500/50 transition-all duration-300 group shadow-2xl"
     >
       <div className="overflow-hidden rounded-xl">
         <img
-          className="w-[250px] h-[150px] object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-[150px] object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
           src={CDN_URL + cloudinaryImageId}
           alt="Biryani"
         />
@@ -29,9 +29,9 @@ const RestaurantCard = (props) => {
           {name}
         </h3>
         <div className="h-[1px] bg-white/10 w-full"></div>
-        
+
         <em className="text-xs text-gray-500 font-medium line-clamp-1 h-4 italic">
-          {cuisines.join(', ')}
+          {cuisines.join(", ")}
         </em>
 
         <div className="flex flex-wrap gap-y-2 mt-2">
