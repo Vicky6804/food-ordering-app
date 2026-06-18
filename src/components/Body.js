@@ -72,13 +72,23 @@ const Body = () => {
             </form>
           </div>
 
+          {/* Total number of restaurants - UPDATED STYLE */}
+          <div className="flex items-center gap-4 bg-[#0f172a] p-2 px-6 rounded-xl border border-white/10 shadow-lg">
+            <h1 className="font-bold text-gray-400 text-sm uppercase tracking-tighter">
+              Total Found:
+            </h1>
+            <span className="text-emerald-400 font-black text-xl">
+              {filteredRestaurant.length}
+            </span>
+          </div>
+
           {/* Filter Button */}
           <div className="search">
             <button
               className="px-8 py-3 bg-white/10 border border-white/20 text-emerald-400 hover:bg-emerald-500 hover:text-black rounded-xl font-black transition-all duration-300"
               onClick={() => {
                 const filteredList = listOfRestaurants.filter(
-                  (res) => parseFloat(res.info.avgRating) > 4,
+                  (res) => parseFloat(res.info.avgRating) > 4.5,
                 );
                 setFilteredRestaurant(filteredList);
               }}
