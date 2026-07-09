@@ -2,7 +2,7 @@ const ShimmerRestaurants = () => {
   return (
     <div className="body bg-[#020617] min-h-screen pb-20">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-between items-center gap-4 p-6 sm:p-8 mb-8 bg-white/5 rounded-3xl border border-white/10 mt-8 mx-4">
+        <div className="flex flex-wrap justify-between items-center gap-4 p-6 sm:p-8 mb-8 bg-white/5 rounded-3xl border border-white/10 mx-4">
           <div className="search flex w-full md:w-auto items-center">
             <div className="flex flex-wrap items-center gap-2 w-full">
               <div className="px-6 py-3 bg-[#0f172a] border border-emerald-500/30 rounded-l-xl w-full md:w-[350px] h-12 animate-pulse bg-gray-700"></div>

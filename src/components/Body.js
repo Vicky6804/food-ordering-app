@@ -41,7 +41,7 @@ const Body = () => {
   ) : (
     <div className="body bg-[#020617] min-h-screen pb-20">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-between items-center gap-4 p-6 sm:p-8 mb-8 bg-white/5 rounded-3xl border border-white/10 mt-8 mx-4">
+        <div className="flex flex-wrap justify-between items-center gap-4 p-6 sm:p-8 mb-8 bg-white/5 rounded-3xl border border-white/10 mx-4">
           {/* Search Section */}
           <div className="search flex w-full md:w-auto items-center">
             <form
