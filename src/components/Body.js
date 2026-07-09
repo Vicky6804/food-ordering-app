@@ -3,7 +3,7 @@ import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
-import Loader from "./Loader";
+import ShimmerRestaurants from "./ShimmerRestaurants";
 import { RESTAURANTS_API } from "../utils/constants";
 
 const Body = () => {
@@ -37,7 +37,7 @@ const Body = () => {
   const { loggedInUser, setUserName } = useContext(UserContext);
 
   return listOfRestaurants.length === 0 ? (
-    <Loader />
+    <ShimmerRestaurants />
   ) : (
     <div className="body bg-[#020617] min-h-screen pb-20">
       <div className="max-w-7xl mx-auto">
